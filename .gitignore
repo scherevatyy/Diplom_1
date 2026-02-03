@@ -1,0 +1,18 @@
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Maven
+target/
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# JVM
+hs_err_pid*
+
+# JaCoCo
+jacoco.exec
