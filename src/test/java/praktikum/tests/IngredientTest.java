@@ -1,13 +1,16 @@
-package praktikum;
+package praktikum.tests;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+import praktikum.Ingredient;
+import praktikum.IngredientType;
 
 import java.util.Arrays;
 import java.util.Collection;
 
 import static org.junit.Assert.assertEquals;
+import static praktikum.constants.TestConstants.DELTA;
 
 @RunWith(Parameterized.class)
 public class IngredientTest {
@@ -36,6 +39,6 @@ public class IngredientTest {
 
         assertEquals(type, ingredient.getType());
         assertEquals(name, ingredient.getName());
-        assertEquals(price, ingredient.getPrice(), 0.0);
+        assertEquals(price, ingredient.getPrice(), DELTA);
     }
 }

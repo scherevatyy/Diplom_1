@@ -1,9 +1,14 @@
-package praktikum;
+package praktikum.tests;
 
 import org.junit.Test;
+import praktikum.Bun;
+import praktikum.Burger;
+import praktikum.Ingredient;
+import praktikum.IngredientType;
 
 import static org.junit.Assert.*;
 import static org.mockito.Mockito.*;
+import static praktikum.constants.TestConstants.DELTA;
 
 public class BurgerTest {
 
@@ -42,7 +47,7 @@ public class BurgerTest {
 
         float actualPrice = burger.getPrice();
 
-        assertEquals(250f, actualPrice, 0.0);
+        assertEquals(250f, actualPrice, DELTA);
     }
 
     @Test
